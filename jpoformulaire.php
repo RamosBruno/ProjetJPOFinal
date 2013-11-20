@@ -141,7 +141,7 @@
                     </tr>
                 </table>
                 <div class = "boutons">
-                    <input type="submit" name="Valider" value="Valider" class = "button_valider"/>
+                    <input type="submit" name="Valider" value="Valider" class = "button_valider" />
                     <input type="button" name="Annuler" value="Annuler" class = "button_effacer"/>
                 </div>
             </form>

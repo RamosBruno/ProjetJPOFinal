@@ -16,8 +16,9 @@
 
         if (!isset($_POST['mdp']) OR $_POST['mdp'] != "profjpo2014!") 
         {
-            echo ("Pas bon");
-        } else 
+            header('Location: ../jpoformulaire.php');
+        } 
+        else 
         {
 
             try {
@@ -32,7 +33,7 @@
             $data = $nbvisites->fetch();
             $nbvisites = $data['nb'];
             echo 'Il y a <b>' . $nbvisites . '</b> personnes inscrites. <br/><br/>';
-            $reponse = $bdd->query('SELECT * FROM identite,etude,competence,infocomplementaires WHERE identite.NUMETUDE=etude.NUMETUDE AND identite.NUMCOMP=competence.NUMCOMP AND identite.NUMINFO=infocomplementaires.NUMINFO');
+            $reponse = $bdd->query('SELECT * FROM identite,etude,competence,infocomplementaires WHERE identite.NUMETUDE=etude.NUMETUDE AND identite.NUMCOMP=competence.NUMCOMP AND identite.NUMINFO=infocomplementaires.NUMINFO ORDER BY identite.NOM ASC');
             
             echo '<table class="table table-bordered">';
             echo '<tr class="success"><td>Nom</td> <td>Prénom</td> <td>Date de naissance</td> <td>Ville</td> <td>Sexe</td> <td>Mail</td> <td>Etablissement d\'origine</td> <td>Bac</td> <td>Autre bac</td> <td>Filière antérieure</td> <td>Option du bac</td> <td>Expérience professionnelle</td> <td>Connaissances en info</td> <td>Avis sur la JPO</td> <td>Connaissance filère</td> <td>Autre connaissance filère</td> <td>Temps de trajet</td> <td>Motivation</td> </tr>';
