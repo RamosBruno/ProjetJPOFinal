@@ -120,7 +120,7 @@
             
             $reponse->closeCursor();
         }
-
+//echo $reponse;
         ?>
     </body>
 

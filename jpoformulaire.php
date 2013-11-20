@@ -106,9 +106,9 @@
                     </tr>
                     <tr>
                         <td>Comment avez-vous connu la SIO?</td>
-                        <td><input type="checkbox" name="SourceSIO" value="Web" checked/> Via Sites Web
-                            <input type="checkbox" name="SourceSIO" value="rec" /> Par recommandation
-                            <input type="checkbox" id="autreCacher" name="SourceSIO" value="autre" onClick="afficher2()" /> Autre
+                        <td><input type="checkbox" name="SourceSIO[]" value="Web" checked/> Via Sites Web
+                            <input type="checkbox" name="SourceSIO[]" value="rec" /> Par recommandation
+                            <input type="checkbox" id="autreCacher" name="SourceSIO[]" value="autre" onClick="afficher2()" /> Autre
                             <input type="text" id="afficherAutre" name="SourceAutre" placeholder="j'ai connu la SIO..."/>
                         </td>
                     <tr>

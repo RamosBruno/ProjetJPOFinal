@@ -21,7 +21,6 @@ $Option = $_POST['Option'];
 $Etablissement = $_POST['Etablissement'];
 $Ville = $_POST['Ville'];
 $Filiere = $_POST['Filiere'];
-$SourceSIO = $_POST['SourceSIO'];
 $SourceAutre = $_POST['SourceAutre'];
 $ExpPro = $_POST['ExpPro'];
 $Connaissances = $_POST['Connaissances'];
@@ -30,6 +29,13 @@ $TempsTrajet = $_POST['TempsTrajet'];
 $Motivation = $_POST['Motivation'];
 $Avis = $_POST['Avis'];
 $Sexe = $_POST['Sexe'];
+
+//récupération de toute la checkbox
+$SourceSIO='';
+for ($i=0;$i<count($_POST['SourceSIO']);$i++)
+{
+    $SourceSIO .= $_POST['SourceSIO'][$i].' ';
+}
 
 
 //insertion dans la table etude
@@ -79,7 +85,7 @@ $req->execute(array(
 ));
 $req->closeCursor();
 ?>
-<meta http-equiv="refresh" content="1;url=jpoformulaire.php;">
+<meta http-equiv="refresh" content="1;url=jpoformulaire.php">
 <script>
     alert("Merci pour votre visite !")
 </script>
