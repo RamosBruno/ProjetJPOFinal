@@ -78,6 +78,8 @@ $req->execute(array(
     ':AdrMail' => $Mail,
 ));
 $req->closeCursor();
-
-header('Location: jpoformulaire.php');
 ?>
+<meta http-equiv="refresh" content="1;url=jpoformulaire.php;">
+<script>
+    alert("Merci pour votre visite !")
+</script>
