@@ -1,0 +1,128 @@
+.button_valider {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Georgia;
+  color: #787878;
+  font-size: 20px;
+  padding: 4px 10px 5px 10px;
+  border: solid #35701e 2px;
+  text-decoration: none;
+  
+  margin-left: 30%;
+  margin-right: 10px;
+}
+
+.button_valider:hover {
+  background: #e6e6e6;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -o-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+  text-decoration: none;
+}
+
+
+.button_effacer {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Georgia;
+  color: #787878;
+  font-size: 20px;
+  padding: 4px 10px 5px 10px;
+  border: solid #eb4545 2px;
+  text-decoration: none;
+}
+
+.button_effacer:hover {
+  background: #e6e6e6;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -o-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+  text-decoration: none;
+}
+
+
+
+
+
+header
+{
+margin-left: 15%;
+}
+
+h1
+{
+  font-family: 'Augusta','serif';
+  font-size: 2.5em;
+}
+
+
+.formulaire
+{
+  margin-left: 23%;
+}
+
+
+@font-face {
+    font-family: 'Augusta';
+    src: url('../font/augusta-webfont.eot');
+    src: url('../font/augusta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/augusta-webfont.woff') format('woff'),
+         url('../font/augusta-webfont.ttf') format('truetype'),
+         url('../font/augusta-webfont.svg#augustaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body
+{
+  width: 1280px;
+  margin :auto;
+  font-family: 'Georgia', 'serif';
+}
+
+
+table td
+{
+  border: 1px solid black;
+  height: -10px;
+}
+
+
+.boutons
+{
+  margin: 1% 1% 10% 10%;
+}
+
+
+.taille
+{
+  resize: none;
+  width: 139px;
+  height: 26px;
+}
+
+textarea
+{
+  resize: none;
+  width: 308px;
+}
