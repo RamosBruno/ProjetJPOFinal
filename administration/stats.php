@@ -62,6 +62,14 @@
 
             $pourcentH = ($sexeH / ($sexeF + $sexeH)) * 100;
 
+            $pourcentBacSTG = ($BACstg/$nbvisites)*100;
+            $pourcentBacS = ($BACs/$nbvisites)*100;
+            $pourcentBacES = ($BACes/$nbvisites)*100;
+            $pourcentBacPro = ($BACpro/$nbvisites)*100;
+            $pourcentBacSTI = ($BACsti/$nbvisites)*100;
+            $pourcentBacAutre = ($BACautre/$nbvisites)*100;
+
+
             $date = date("d-m-Y");
             $horaire = date("H:i");
             $Age16 = 0;
@@ -105,6 +113,12 @@
 
             $reponse->closeCursor();
 
+            $pourcent16 = ($Age16/$nbvisites)*100;
+            $pourcent17 = ($Age17/$nbvisites)*100;
+            $pourcent18 = ($Age18/$nbvisites)*100;
+            $pourcent19 = ($Age19/$nbvisites)*100;
+            $pourcent20 = ($Age20/$nbvisites)*100;
+
             echo '<table class="table table-bordered">';
             echo '  <tr>
                 <td>Nombre de visiteurs inscrits</td>
@@ -121,51 +135,74 @@
                 <td>Sexe masculin</td>
                 <td> ' . $sexeH . ' (';
             printf("%.1f", $pourcentH);
-            echo '%) </td>
+            echo '%) 
+                </td>
                 </tr>
                 <tr>
                 <td>BAC STG</td>
-                <td> ' . $BACstg . ' </td>
+                <td> ' . $BACstg . ' (';
+                printf("%.1f", $pourcentBacSTG);
+                echo '%)  </td>
                 </tr>
                 <tr>
                 <td>BAC S</td>
-                <td> ' . $BACs . ' </td>
+                <td> ' . $BACs . ' (';
+                printf("%.1f", $pourcentBacS);
+                echo '%) </td>
                 </tr>
                 <tr>
                 <td>BAC ES</td>
-                <td> ' . $BACes . ' </td>
+                <td> ' . $BACes . ' (';
+                printf("%.1f", $pourcentBacES);
+                echo '%) </td>
                 </tr>
                 <tr>
                 <td>BAC STI</td>
-                <td> ' . $BACsti . ' </td>
+                <td> ' . $BACsti . ' (';
+                printf("%.1f", $pourcentBacSTI);
+                echo '%) </td>
                 </tr>
                 <tr>
                 <td>BACP PRO</td>
-                <td> ' . $BACpro . ' </td>
+                <td> ' . $BACpro . ' (';
+                printf("%.1f", $pourcentBacPro);
+                echo '%) </td>
                 </tr>
                 <tr>
                 <td>BAC Autre</td>
-                <td> ' . $BACautre . ' </td>
+                <td> ' . $BACautre . ' (';
+                printf("%.1f", $pourcentBacAutre);
+                echo '%) </td>
                 </tr>
                 <tr>
                 <td>Inscrit(s) de moins de 17 ans</td>
-                <td> ' . $Age16 . ' </td>
+                <td> ' . $Age16 . ' (';
+                printf("%.1f", $pourcent16);
+                echo '%) </td></td>
                 </tr>
                 <tr>
                 <td>Inscrit(s) de 17 ans</td>
-                <td> ' . $Age17 . ' </td>
+                <td> ' . $Age17 . ' (';
+                printf("%.1f", $pourcent17);
+                echo '%) </td></td>
                 </tr>
                 <tr>
                 <td>Inscrit(s) de 18 ans</td>
-                <td> ' . $Age18 . ' </td>
+                <td> ' . $Age18 . ' (';
+                printf("%.1f", $pourcent18);
+                echo '%) </td></td>
                 </tr>
                 <tr>
                 <td>Inscrit(s) de 19 ans</td>
-                <td> ' . $Age19 . ' </td>
+                <td> ' . $Age19 . ' (';
+                printf("%.1f", $pourcent19);
+                echo '%) </td></td>
                 </tr>
                 <tr>
                 <td>Inscrit(s) de plus de 19 ans</td>
-                <td> ' . $Age20 . ' </td>
+                <td> ' . $Age20 . ' (';
+                printf("%.1f", $pourcent20);
+                echo '%) </td></td>
                 </tr>';
 
             echo '</table>';
